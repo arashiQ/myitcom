@@ -6,8 +6,8 @@ package com.arashiq.enums;
  */
 public enum SkillCategory {
     DESIGN,
+    TECHNOLOGY,
     BUSINESS,
     COMMON,
     SPECIALIZED,
-    TECHNOLOGY,
 }

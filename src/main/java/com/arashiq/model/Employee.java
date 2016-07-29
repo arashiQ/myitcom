@@ -2,9 +2,13 @@ package com.arashiq.model;
 
 import com.arashiq.enums.Gender;
 import org.springframework.data.mongodb.core.index.Indexed;
+import org.thymeleaf.util.ArrayUtils;
 
 import javax.persistence.Id;
-import java.util.Map;
+import java.time.LocalDate;
+import java.util.*;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 /**
  * @author arashiQ
@@ -13,12 +17,12 @@ import java.util.Map;
 public class Employee {
 
     @Id
-    private Long employeeId;
+    private String id;
     @Indexed
-    private Long userId;
+    private long userId;
     private String employeeName;
     private Gender gender;
-    private Integer age;
+    private LocalDate birthday;
     private String avatar;
     private String country;
     private String position;
@@ -27,7 +31,9 @@ public class Employee {
     private int communication;
     private int creativity;
     private int spirit;
+    private int loyalty;
 
+    private int experience;
     private int lv;
     private int positionLv;
     private Map<Integer, Integer> skills;

@@ -16,69 +16,21 @@ public class User {
 
     private String password;
 
-    private long avatarId;
+    //employee id as ceo;
+    private String avatar;
 
-    private long companyId;
+    private String companyId;
 
     private Integer fame;
 
     public User() {
     }
 
-    public User(long id, String userName, String password, long avatarId, long companyId, Integer fame) {
-        this.id = id;
+    public User(String userName, String password, String avatar, String companyId, Integer fame) {
         this.userName = userName;
         this.password = password;
-        this.avatarId = avatarId;
+        this.avatar = avatar;
         this.companyId = companyId;
-        this.fame = fame;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public long getAvatarId() {
-        return avatarId;
-    }
-
-    public void setAvatarId(Long avatarId) {
-        this.avatarId = avatarId;
-    }
-
-    public long getCompanyId() {
-        return companyId;
-    }
-
-    public void setCompanyId(Long companyId) {
-        this.companyId = companyId;
-    }
-
-    public Integer getFame() {
-        return fame;
-    }
-
-    public void setFame(Integer fame) {
         this.fame = fame;
     }
 
@@ -88,8 +40,8 @@ public class User {
                 "id=" + id +
                 ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
-                ", avatarId=" + avatarId +
-                ", companyId=" + companyId +
+                ", avatar='" + avatar + '\'' +
+                ", companyId='" + companyId + '\'' +
                 ", fame=" + fame +
                 '}';
     }

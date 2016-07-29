@@ -5,12 +5,22 @@ package com.arashiq.enums;
  * @data 2016/07/13
  */
 public enum SkillEffect {
+    //base,value is the level
+    DEVELOP,
+    DESIGN,
+    PLAN,
 
+    TEST,
 
+    SALES,
+    HR,
+    PR,
+    SPECIALIZED,
 
-    TECH_UP,
+    //addition value is the level
+    SPEED_UP,
     BUG_REDUCE,
-    DESIGN_UP,
+
     SCORE_UP,
 
     //Kpi for app

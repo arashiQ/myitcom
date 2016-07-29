@@ -16,14 +16,13 @@ public class Skill {
     @Id
     private String id;
     private String code;
+    private String parentSkill;
     private Integer level;
     private String name;
     private String description;
-    private SkillType type;
     private SkillCategory category;
     private SkillEffect effect;
     private Integer effectValue;
-    private String unlockTime;
 
     public Skill() {
     }
