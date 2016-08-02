@@ -37,7 +37,7 @@ public class HelloController {
 
     @RequestMapping(method= RequestMethod.GET)
     public Employee index(Model model){
-        User user = new User("userName", "password", "avatar", "companyId", "1980-01-01", LocalDateTime.now().toEpochSecond(ZoneOffset.UTC), 9);
+        User user = new User("userName", "password", "avatar", "companyId", "1980-01-01", new Date().getTime(), 9);
 //        User user = userService.getUser(1L);
         user = userService.createuser(user);
         Country china = new Country("China","chinaImage", PlaceEffect.BASE_SALARY, -20);

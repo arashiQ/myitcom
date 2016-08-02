@@ -23,7 +23,7 @@ public class State {
     private List<SkillType> skillTypes;
     private List<TechnologyEffect> technologyEffects;
 
-    private Long version;
+    private Long commonDataVersion;
     //data from mongodb
     private List<City> cities;
     private List<Country> countries;
@@ -85,8 +85,8 @@ public class State {
         return technologyEffects;
     }
 
-    public Long getVersion() {
-        return version;
+    public Long getCommonDataVersion() {
+        return commonDataVersion;
     }
 
     public List<City> getCities() {
@@ -181,8 +181,8 @@ public class State {
         this.technologyEffects = technologyEffects;
     }
 
-    public void setVersion(Long version) {
-        this.version = version;
+    public void setCommonDataVersion(Long commonDataVersion) {
+        this.commonDataVersion = commonDataVersion;
     }
 
     public void setCities(List<City> cities) {

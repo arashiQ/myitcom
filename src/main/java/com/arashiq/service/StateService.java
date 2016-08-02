@@ -9,11 +9,8 @@ import com.arashiq.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
-
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -22,7 +19,7 @@ import java.util.List;
  */
 @Service
 public class StateService {
-    private static Long commonVersion = LocalDateTime.now().toEpochSecond(ZoneOffset.UTC);
+    private static Long commonVersion = new Date().getTime();
 
     @Autowired
     private UserRepository userRepository;

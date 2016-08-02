@@ -23,7 +23,7 @@ public class CommonData {
     private List<SkillType> skillTypes;
     private List<TechnologyEffect> technologyEffects;
 
-    private Long version;
+    private Long commonDataVersion;
     //data from mongodb
     private List<City> cities;
     private List<Country> countries;
@@ -32,7 +32,7 @@ public class CommonData {
     private List<Skill> skills;
     private List<Technology> technologies;
 
-    public CommonData(List<PlaceEffect> placeEffects, List<PositionCategory> positionCategories, List<PositionFeature> positionFeatures, List<ProjectCategory> projectCategories, List<ProjectKPI> projectKPIs, List<ProjectStage> projectStages, List<SkillCategory> skillCategories, List<SkillEffect> skillEffects, List<SkillType> skillTypes, List<TechnologyEffect> technologyEffects, Long version, List<City> cities, List<Country> countries, List<Position> positions, List<ProjectType> projectTypes, List<Skill> skills, List<Technology> technologies) {
+    public CommonData(List<PlaceEffect> placeEffects, List<PositionCategory> positionCategories, List<PositionFeature> positionFeatures, List<ProjectCategory> projectCategories, List<ProjectKPI> projectKPIs, List<ProjectStage> projectStages, List<SkillCategory> skillCategories, List<SkillEffect> skillEffects, List<SkillType> skillTypes, List<TechnologyEffect> technologyEffects, Long commonDataVersion, List<City> cities, List<Country> countries, List<Position> positions, List<ProjectType> projectTypes, List<Skill> skills, List<Technology> technologies) {
         this.placeEffects = placeEffects;
         this.positionCategories = positionCategories;
         this.positionFeatures = positionFeatures;
@@ -43,7 +43,7 @@ public class CommonData {
         this.skillEffects = skillEffects;
         this.skillTypes = skillTypes;
         this.technologyEffects = technologyEffects;
-        this.version = version;
+        this.commonDataVersion = commonDataVersion;
         this.cities = cities;
         this.countries = countries;
         this.positions = positions;
@@ -92,8 +92,8 @@ public class CommonData {
         return technologyEffects;
     }
 
-    public Long getVersion() {
-        return version;
+    public Long getCommonDataVersion() {
+        return commonDataVersion;
     }
 
     public List<City> getCities() {
