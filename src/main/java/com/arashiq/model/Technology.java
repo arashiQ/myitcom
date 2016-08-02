@@ -13,7 +13,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Technology {
     @Id
     private String id;
-    private String code;
     private int generation;
     private String name;
     private String desc;

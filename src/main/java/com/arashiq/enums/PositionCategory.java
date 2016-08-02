@@ -7,7 +7,7 @@ package com.arashiq.enums;
 public enum PositionCategory {
     //base
     TECH,
-    DEVELOP,
+    DESIGN,
     PLAN,
 
     //support

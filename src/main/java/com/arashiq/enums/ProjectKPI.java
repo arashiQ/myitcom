@@ -9,12 +9,13 @@ import java.util.List;
  */
 public enum ProjectKPI {
 
+    STABILITY(10,0,0),
     FUNCTIONAL(5,0,5),
-    CREATIVITY(3,0,7),
-    SECURITY(10,0,0),
+    CREATIVITY(2,2,6),
+    SECURITY(8,0,2),
 
-    UI(3,5,2),
-    UX(0,10,0),
+    UI(3,7,0),
+    UX(0,7,3),
     NET(10,0,0),
 
     SCALABILITY(10,0,0),
@@ -37,10 +38,10 @@ public enum ProjectKPI {
         this.plan = plan;
     }
 
-    public static final List<ProjectKPI> APP_KPIS = Arrays.asList(FUNCTIONAL,CREATIVITY, SECURITY, UI, UX, NET);
-    public static final List<ProjectKPI> ENTERPRISE_KPIS = Arrays.asList(FUNCTIONAL,SCALABILITY, MAINTAINABILITY, SECURITY, UI, NET);
-    public static final List<ProjectKPI> WEBSITE_KPIS = Arrays.asList(CREATIVITY, CONTENT, MAINTAINABILITY, SECURITY, UI, NET);
-    public static final List<ProjectKPI> GAME_KPIS = Arrays.asList(FUN, GRAPHICS, SOUND, CREATIVITY, STORY, NET);
-    public static final List<ProjectKPI> TOOL_KPIS = Arrays.asList(FUNCTIONAL, CREATIVITY, SCALABILITY, SECURITY, UI, NET);
-    public static final List<ProjectKPI> PLATFORM_KPIS = Arrays.asList(FUNCTIONAL, CONTENT, SCALABILITY, MAINTAINABILITY, SECURITY, NET);
+    public static final List<ProjectKPI> APP_KPIS = Arrays.asList(STABILITY, FUNCTIONAL,CREATIVITY, SECURITY, UI, UX, NET);
+    public static final List<ProjectKPI> ENTERPRISE_KPIS = Arrays.asList(STABILITY, FUNCTIONAL,SCALABILITY, MAINTAINABILITY, SECURITY, UI, NET);
+    public static final List<ProjectKPI> WEBSITE_KPIS = Arrays.asList(STABILITY, CREATIVITY, CONTENT, MAINTAINABILITY, SECURITY, UI, NET);
+    public static final List<ProjectKPI> GAME_KPIS = Arrays.asList(STABILITY, FUN, GRAPHICS, SOUND, CREATIVITY, STORY, NET);
+    public static final List<ProjectKPI> TOOL_KPIS = Arrays.asList(STABILITY, FUNCTIONAL, CREATIVITY, SCALABILITY, SECURITY, UI, NET);
+    public static final List<ProjectKPI> PLATFORM_KPIS = Arrays.asList(STABILITY, FUNCTIONAL, CONTENT, SCALABILITY, MAINTAINABILITY, SECURITY, NET);
 }

@@ -15,9 +15,9 @@ public class Company {
     private Long userId;
     private int funds;
     private int users;
-    private int funs;
+    private int fans;
+    private int fame;
     private String country;
-
 
     public String getId() {
         return id;
@@ -59,12 +59,20 @@ public class Company {
         this.users = users;
     }
 
-    public int getFuns() {
-        return funs;
+    public int getFans() {
+        return fans;
     }
 
-    public void setFuns(int funs) {
-        this.funs = funs;
+    public void setFans(int fans) {
+        this.fans = fans;
+    }
+
+    public int getFame() {
+        return fame;
+    }
+
+    public void setFame(int fame) {
+        this.fame = fame;
     }
 
     public String getCountry() {
@@ -78,13 +86,14 @@ public class Company {
     public Company() {
     }
 
-    public Company(String id, String name, Long userId, int funds, int users, int funs, String country) {
+    public Company(String id, String name, Long userId, int funds, int users, int fans, int fame, String country) {
         this.id = id;
         Name = name;
         this.userId = userId;
         this.funds = funds;
         this.users = users;
-        this.funs = funs;
+        this.fans = fans;
+        this.fame = fame;
         this.country = country;
     }
 
@@ -96,7 +105,8 @@ public class Company {
                 ", userId=" + userId +
                 ", funds=" + funds +
                 ", users=" + users +
-                ", funs=" + funs +
+                ", fans=" + fans +
+                ", fame=" + fame +
                 ", country='" + country + '\'' +
                 '}';
     }

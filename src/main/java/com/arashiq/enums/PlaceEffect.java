@@ -1,0 +1,29 @@
+package com.arashiq.enums;
+
+/**
+ * @author arashiQ
+ * @data 2016/07/28
+ */
+public enum PlaceEffect {
+    BASE_TALENT,
+    BASE_IMPORT,
+    BASE_EXPORT,
+    BASE_PACE,
+    BASE_SALARY,
+    BASE_COST,
+    BASE_USER,
+    BASE_FUN,
+
+
+    CATEGORY_CONTRACT,
+    CATEGORY_APP,
+    CATEGORY_ENTERPRISE,
+    CATEGORY_WEBSITE,
+    CATEGORY_GAME,
+    CATEGORY_TOOL,
+    CATEGORY_PLATFORM,
+    CATEGORY_HARDWARE,
+    CATEGORY_SEQUEL,
+    CATEGORY_RESEARSH,
+
+}

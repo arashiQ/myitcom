@@ -13,5 +13,7 @@ public enum ProjectCategory {
     TOOL,
     PLATFORM,
     HARDWARE,
+    SEQUEL,
+    RESEARSH,
 
 }

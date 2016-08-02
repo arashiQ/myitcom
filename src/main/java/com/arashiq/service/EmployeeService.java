@@ -1,13 +1,11 @@
 package com.arashiq.service;
 
-import com.arashiq.model.Employee;
 import com.arashiq.Repository.EmployeeRepository;
+import com.arashiq.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * @author arashiQ
@@ -19,7 +17,7 @@ public class EmployeeService {
     @Autowired
     private EmployeeRepository employeeRepository;
 
-    public Employee getEmployee(Long employeeId){
+    public Employee getEmployee(String employeeId){
         return employeeRepository.findOne(employeeId);
     }
 
