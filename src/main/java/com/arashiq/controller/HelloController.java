@@ -35,7 +35,7 @@ public class HelloController {
     @Autowired
     private ProjectTypeRepository projectTypeRepository;
 
-    @RequestMapping(method= RequestMethod.GET)
+    @RequestMapping(value="/hello", method= RequestMethod.GET)
     public Employee index(Model model){
         User user = new User("userName", "password", "avatar", "companyId", "1980-01-01", new Date().getTime(), 9);
 //        User user = userService.getUser(1L);
